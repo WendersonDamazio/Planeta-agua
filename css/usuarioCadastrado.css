@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    height: 180px;
+    color: #fff;
+    background: #0075FF url(../img/background4.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+header div{
+    padding: 70px;
+}
+header div h1{
+    font-size: 3rem;
+}
+header div a {
+    color: #ffffff;
+    text-decoration: none;
+}
+header div a:hover {
+    color: rgb(183, 183, 183),;
+    text-decoration: underline #fff;
+}
+.usuario{
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.usuario img{
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.342);
+}
+.usuario .info{
+    text-align: center;
+    padding: 20px;
+}
+.usuario .info a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #003786;
+}
+.usuario .info a:hover{
+    text-decoration: underline;
+}
+.usuario .info p{
+    margin: 5px 0 5px 0;
+    font-size: 1.5rem;
+}
+.usuario .info p strong{
+    color: #003786;
+}
+.usuario .info input{
+    padding: 5px;
+    margin: 5px;
+    width: 100px;
+    background-color: #0075FF;
+    color: #fff;
+    border: 1px solid #0075FF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.usuario .info input:hover{
+    opacity: 0.8;
+}
+.denuncias{
+    padding-left: 15%;
+}
+.denuncias h2{
+    padding-top: 5%;
+    padding-left: 5%;
+    color: #003786;
+    font-size: 2rem;
+}
+.post{
+    width: 20rem;
+    height: 25rem;
+    box-shadow: 0px 0px 3px rgb(183, 183, 183);
+    border-radius: 5px;
+    background-color: #fff;
+}
+.layoutpost{
+    display: flex;
+    padding: 0 20rem;
+}
+.inputBox {
+    position: relative;
+    font-family:moteserat-medium;
+    padding-left: 34%;
+}
+.inputBox span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+.inputBox input{
+    width: 50%;
+    padding: 0.625rem 10px;
+    font-size: 1.7rem;
+    letter-spacing: 0.062rem;
+    margin-bottom: 1.875rem;
+    border: 1px solid #ccc;
+    background: transparent;
+    border-radius: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.inputBox span{
+    position: absolute;
+    background-color: #fff;
+    top: -20px;
+    left: 10px;
+    padding: 0.625rem 0;
+    font-size: 1.1rem;
+    color: grey;
+    pointer-events: none;
+    transition: 0.3s;
+    padding-left: 34%;
+}
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span,
+.inputBox input:not([value=""]) ~ span {
+    top: -20px;
+    left: 30px;
+    color: #003786;
+    font-size: 1rem;
+    background-color: #fff;
+    height: 10px;
+    padding-left: 33%;
+}
+.inputBox input:focus {
+    outline: none;
+    border: 2px solid #003786;
+}
+form .inputBoxB input{ 
+    height: 50px;
+    width: 200px;
+    margin-left: 46%;
+    font-size: 1.5rem;
+    background-color: #0075FF;
+    color: #fff;
+    border: 1px solid #0075FF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.usuario2{
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.usuario2 img{
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.342);
+}
+.usuario2 .info2{
+    text-align: center;
+    padding: 20px;
+}
+.usuario2 .info2 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #003786;
+}
+.usuario2 .info2 a:hover{
+    text-decoration: underline;
+}
+.usuario2 .info2 p{
+    margin: 5px 0 5px 0;
+    font-size: 1.5rem;
+}
+.usuario2 .info2 p strong{
+    color:#0075FF;
+}
+.usuario2 .info2 input{
+    padding: 5px;
+    margin: 5px;
+    width: 120px;
+    background-color: #0075FF;
+    color: #fff;
+    border: 1px solid #0075FF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.usuario2 .info2 input:hover{
+    opacity: 0.8;
+}
+@media screen and (max-width:740px) {
+    header div{
+        padding: 2rem;
+    }
+    header div h1{
+        font-size: 2rem;
+    }
+    .usuario img{
+        margin-top: 4rem;
+        border-radius: 50%;
+        width: 5rem;
+        height: 5rem;
+    }
+    .usuario .info p{
+        font-size: 1rem;
+    }
+    .denuncias{
+        padding-left: 15%;
+    }
+    .denuncias h2{
+        font-size: 1.5rem;
+        padding-top: 0;
+    }
+    .post{
+        width: 5rem;
+        height: 9rem;
+    }
+    .layoutpost{
+        display: flex;
+        padding: 0;
+    }
+    .usuario2 img{
+        margin-top: 3rem;
+        width: 7rem;
+        height: 7rem;
+    }
+    .usuario2 .info2 p{
+        font-size: 1rem;
+    }
+    .usuario2 .info2{
+        margin-top: -2rem;
+    }
+    form .inputBox input{ 
+        height: 1rem;
+        width: 13rem;
+        font-size: 0.8rem;
+        margin-left: -3rem;
+    }
+    form .inputBox span{
+        margin-left: -5rem;
+        font-size: 0.7rem;
+    }
+    form .inputBoxB input{
+        padding: 0;
+        margin: 0;
+        margin-left: 7.5rem;
+        width: 7rem;
+        height: 2rem;
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icone.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/feedstyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>Planeta água</title>
+    <script src="scriptfeed.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navigation">
+      <div class="logo">
+        <img class="lgp" src="img/logo-pa.svg">
+      </div>
+      <div class="wrap">
+        <div class="search">
+            <input type="text" class="searchTerm" placeholder="Pesquisar">
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+            </button>
+        </div>
+      </div>   
+      <ul>
+        <div class="icon-post">
+          <i class="fa fa-plus-square-o fa-3x" onclick="postar('post')" aria-hidden="true"></i>
+        </div>
+          <a href="usuarioCadastrado.html"><img class="imuser" src="/icons/user.png" width="35"></a>
+      </ul>
+    </nav>
+  </header>
+  <div id="post" class="postar" style="max-width: 400px;"> 
+    <div class="escolher-foto">
+      <form class="form-upload">
+        <label class="input-personalizado" style="max-width: 400px;">
+          <span class="botao-selecionar" onclick="escm()">Selecione uma imagem</span>
+          <img class="imagem" />
+          <input type="file" class="input-file" accept="image/*" style="max-width: 400px;">
+        </label>
+      </form>
+    </div>
+      <textarea id="fala" cols="50" rows="10" placeholder="Fale sobre o caso" style="max-width: 400px;"></textarea>
+      <input type="button" onclick="enviar('post')" value="Enviar">
+  </div>
+   <section class="posts">
+          <div class="card" style="max-width: 400px;">
+            <div class="cabuser">
+              <img src="/icons/user.png" width="30" height="30">
+              <p>Zezin Da Silva</p>
+            </div>
+            <img src="/img/rua01 (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="ic">
+                <img id="like" src="/icons/pingo-dagua-false.svg" width="25" onclick="likee()" onmouseenter="opali()" onmouseout="opaa()">
+                <img src="/icons/bate-papo.svg" width="30" id="com" onmouseenter="opacom()" onmouseout="opaa()">
+                <img src="/icons/compartilhar.svg" width="25" id="comp" onmouseenter="opacomp()" onmouseout="opaa()">
+            </div>
+              <p class="card-text">Faz 1 mês que estamos nessa situação,acionamos varias vezes a compesa e nada do problema ser resolvido</p>
+            </div >
+            <p class="text-time"><small>Postado a 3 minutos atrás</small></p> 
+                      <div class="loc">  
+                        <img src="/icons/localizacao.svg" width="18">
+                        <p>Recife-PE</p>
+                      </div>
+          </div>
+             <div class="card" style="max-width: 400px;">
+            <div class="cabuser">
+              <img src="/icons/user.png" width="30" height="30">
+              <p>Zezin Da Silva</p>
+            </div>
+            <img src="/img/rua01 (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="ic">
+                <img id="like" src="/icons/pingo-dagua-false.svg" width="25" onclick="likee()" onmouseenter="opali()" onmouseout="opaa()">
+                <img src="/icons/bate-papo.svg" width="30" id="com" onmouseenter="opacom()" onmouseout="opaa()">
+                <img src="/icons/compartilhar.svg" width="25" id="comp" onmouseenter="opacomp()" onmouseout="opaa()">
+            </div>
+              <p class="card-text">Faz 1 mês que estamos nessa situação,acionamos varias vezes a compesa e nada do problema ser resolvido</p>
+            </div >
+            <p class="text-time"><small>Postado a 3 minutos atrás</small></p> 
+                      <div class="loc">  
+                        <img src="/icons/localizacao.svg" width="18">
+                        <p>Recife-PE</p>
+                      </div>
+          </div>
+          <div class="card" style="max-width: 400px;">
+            <div class="cabuser">
+              <img src="/icons/user.png" width="30" height="30">
+              <p>Ash kation</p>
+            </div>
+            <img src="/img/rua03 (1).jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="ic">
+                <img id="like" src="/icons/pingo-dagua-false.svg" width="25" onclick="likee()" onmouseenter="opali()" onmouseout="opaa()">
+                <img src="/icons/bate-papo.svg" width="30" id="com" onmouseenter="opacom()" onmouseout="opaa()">
+                <img src="/icons/compartilhar.svg" width="25" id="comp" onmouseenter="opacomp()" onmouseout="opaa()">
+            </div>
+              <p class="card-text">Venho aqui relatar um problema neste vazamento de água faz uma semana que eu e meus vizinhos estamos sofrendo com esta situação.</p>
+            </div >
+            <p class="text-time"><small>Postado a 3 minutos atrás</small></p> 
+                      <div class="loc">  
+                        <img src="/icons/localizacao.svg" width="18">
+                        <p>Rio formoso-PE</p>
+                      </div>
+          </div>
+          <div class="card" style="max-width: 400px;">
+            <div class="cabuser">
+              <img src="/icons/user.png" width="30" height="30">
+              <p>Zezin Da Silva</p>
+            </div>
+            <img src="/img/rua01 (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="ic">
+                <img id="like" src="/icons/pingo-dagua-false.svg" width="25" onclick="likee()" onmouseenter="opali()" onmouseout="opaa()">
+                <img src="/icons/bate-papo.svg" width="30" id="com" onmouseenter="opacom()" onmouseout="opaa()">
+                <img src="/icons/compartilhar.svg" width="25" id="comp" onmouseenter="opacomp()" onmouseout="opaa()">
+            </div>
+              <p class="card-text">Faz 1 mês que estamos nessa situação,acionamos varias vezes a compesa e nada do problema ser resolvido</p>
+            </div >
+            <p class="text-time"><small>Postado a 3 minutos atrás</small></p> 
+                      <div class="loc">  
+                        <img src="/icons/localizacao.svg" width="18">
+                        <p>Recife-PE</p>
+                      </div>
+          </div>
+    </section>
+</body>
+</html>

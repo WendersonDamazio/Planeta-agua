@@ -1,0 +1,512 @@
+*{
+    margin-left: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    overflow-x: hidden;
+    margin-right: 0;
+}
+@font-face {
+    font-family: moteserat-bold;
+    src: url(fontes/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: moteserat-semibold;
+    src: url(fontes/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: moteserat-medium;
+    src: url(fontes/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: moteserat-regular;
+    src: url(fontes/Montserrat-Regular.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    display: block;
+    z-index: 100;
+}
+.logo{
+    margin-left: 1%;
+    margin-top: -0.7rem;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 2px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    width: 100%;
+    height: 4rem;
+}
+.navigation ul{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    list-style-type: none;
+    gap: 2.5rem;
+    margin-top: 0.9rem;
+}
+.nav-list a{
+    color: #1e1c2a;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: moteserat-medium;
+    text-transform: uppercase;
+    transition: 0.5s;
+    position: relative;
+    text-decoration: none;
+}
+#cadastre-senav a {
+    font-family: moteserat-medium;
+    text-transform: uppercase;
+    transition: 0.5s;
+    position: relative;
+    text-decoration: none;
+}
+.nav-list a::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0.2rem;
+    background: #0075FF;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+}
+.navigation a:hover{
+    color: #1e1c2a;
+}
+.navigation a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.navigation i{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+main .main-text h1{
+    padding-bottom: 1rem;
+    color: #fff;
+    padding-top: 45%;
+    font-family: moteserat-bold;
+}
+main .botao {
+    font-size: 1.7rem;
+    margin-top: 0.5rem;
+    font-family: moteserat-medium;
+}
+main .botao a{
+    background-color: rgb(48, 103, 200); 
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+}
+main .botao a:hover{
+    background-color:rgb(30, 64, 121) ;
+    transition: all 0.5s;
+}
+.earth{
+    background-attachment: fixed;
+}
+.principal{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    margin: 2%;
+    padding-left: 2%;
+}
+
+.normal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#sobre-nos .texto-section h3{
+    position: relative;
+    top: -4rem;
+    font-size: 3rem;
+}
+.texto-section p{
+    line-height: 2.5rem;
+    font-weight: 500;
+}
+header .navigation button{
+    background-color: #0075FF;
+    padding: 0.6rem;
+    border: none;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+header .navigation button a{
+    color: #fff;
+    font-weight: 300;
+}
+header .navigation button:hover{
+    background-color: #1361b9;
+}
+header .navigation button a:hover{
+    color: white;
+}
+#denuncia{
+    background-color: #e1e1e1;
+}
+#introducao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+}
+.sombra{
+    width: 50%;
+    height: 5px;
+    border-bottom: 1px solid #0075FF;
+    position: relative;
+    top: -17rem;
+}
+#introducao .text{
+    margin-top: 1rem;
+}
+#introducao .text h1{
+    margin-top: 4rem;
+    line-height: 2.5rem;
+    font-size: 3rem;
+    margin-bottom: 8rem;
+    color: rgb(72, 70, 70);
+}
+#introducao .text .parte-baixo{
+    position: relative;
+    top: -10rem;
+    left: 5rem;
+    color: rgb(72, 70, 70);
+}
+#introducao .text-2{
+   position: relative;
+   top: -5rem;
+}
+#introducao .text-2 p{
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+}
+.normal{
+    padding-top: 10%;
+    margin-bottom:10%;
+}
+.texto-section{
+    font-family: moteserat-medium;
+}
+section .sobre-nos{
+    position: relative;
+    width: 100%;
+    margin-top: -10%;
+    font-family: moteserat-medium;
+}
+.sobre-nos{
+    background-color: rgb(236, 236, 236);
+    font-family: moteserat-medium;
+}
+.sobre-nos .nossaeq h1{
+    margin-left: 5%;
+}
+.sobre-nos .nossaeq{
+    background-color: rgb(236, 236, 236);
+    position: absolute;
+}
+.sobre-nos .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+    z-index: 100%;
+}
+.sobre-nos .container .card{
+    position: relative;
+    width: 27rem;
+    height: 40rem;
+    margin: 5rem;
+    box-shadow: 0px 0px 10px rgb(216, 216, 216);
+    border-radius: 15px;
+    background-color: #fff;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.sobre-nos .container .card .content{
+    text-align: center;
+}
+.sobre-nos .container .card .content h3{
+    font-family: moteserat-semibold;
+}
+.sobre-nos .container .card .content p{
+    font-family:  moteserat-medium;
+    font-size: 1.3rem;
+    margin: 1.5rem;
+}
+.sobre-nos .container .card .content button{
+    align-items: flex-end;
+    background-color: #0075FF;
+    color: #fff;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    font-family: moteserat-semibold;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.sobre-nos .container .card img{
+    border-radius: 90rem;
+}
+.texto-section p{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+}
+.preserve{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    padding-left: 80px;
+    background-color: #FFF;
+    background-size: cover;
+    overflow: hidden;
+}
+.containerP .containerP2 {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-items: center;
+}
+.preserve{
+    display: flex;
+    gap: 20px;
+}
+.cardP {
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+    cursor: pointer;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#2a54bf,#067ded);
+    transition: all .5s;
+}
+.cardP:hover {
+    background-image: linear-gradient(#2a54bf, #067ded);
+}
+.cardP .imgP {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('../img/background4.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+.cardP .imgP span {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+    color: #fff;
+    font-family: moteserat-regular;
+}
+.cardP .imgP p{
+    box-shadow: #000 1px 1px 15px;
+}
+.cardP:hover .imgP {
+    width: 430px;
+    opacity: 1;
+}
+.cardP:hover .imgP span {
+    font-size: 22px;
+    color: #FFF;
+    font-family: #2a54bf;
+}
+.cardP .contentP {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(20px);
+}
+.cardP:hover .contentP {
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+.cardP .contentP  p {
+    margin: 0;
+    font-family: moteserat-regular;
+    color: #fff;
+}
+.cardP .contentP  .title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFF;
+}
+.cardP .contentP  .desc {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 4px;
+}
+.cardP .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+.cardP:hover .arrow {
+    transform: rotate(0);
+}
+.cardP .arrow span {
+    font-size: 24px;
+}
+.conteudo h1{
+    color: black;
+}
+.text{
+    font-family: moteserat-regular;
+}
+footer {
+    margin-top: 107.8%;
+    bottom:0;
+    left:0;
+    width: 100%;
+}
+@media screen and (max-width:740px) {
+    header{
+        width: 220%;
+        margin-top: -5%;
+    }
+    .logo{
+        margin-left: 40%;
+        margin-top: -8%;
+    }
+    .navigation img{
+        width: 10rem;
+        cursor: pointer;
+    }
+    .navigation{
+        padding: 3.5rem 10px;
+    }
+    .navigation ul{
+       margin-top: 10%;
+       margin-left: -100%;
+    }
+    .nav-list a{
+        font-size: 1.3rem;
+    }
+    main .main-text{
+        margin-left: 5%;
+    }
+    #introducao .text{
+        margin-left: 70%;
+        width: 230%;
+    }
+    #introducao .text h1{
+        margin-top: 2rem;
+        margin-left: 15%;
+        font-size: 2rem;
+    }
+    #introducao .text .parte-baixo{
+        left: 0rem;
+    }
+    .sombra{
+        width:100%;
+        margin-left: 100%;
+        position: relative;
+    }
+    #introducao .text-2{
+        top: -15rem;
+        width: 230%;
+    }
+    #introducao .text-2 p{
+        margin-left: 1%;
+        line-height: 2rem;
+        font-size: 1.7rem;
+        margin-left: 30%;
+    }
+    .normal{
+        margin-top: -30%;
+        margin-left: -20%;
+        font-size: 1.3rem;
+        width: 239%;
+        padding-bottom: 10%;
+    }
+    .normal img{
+        opacity: 50%;
+        margin-left: 20%;
+        width: 800px;
+        position: absolute;
+    }
+    .normal .texto-section h3{
+        margin-top: 10%;
+    }
+    .sobre-nos .nossaeq h1{
+        margin-top: 10%;
+        margin-left: 14%;
+    }
+    .sobre-nos .nossaeq{
+        margin-top: -10%;
+        background-color: rgb(236, 236, 236);
+        min-width: 220%;
+    }
+    .sobre-nos .container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 150%;
+        flex-wrap: wrap;
+    }
+    .preserve{
+        width: 290%;
+        height: 300%;
+        margin-left: 90%;
+        flex-direction: column;
+    }
+    footer {
+        margin-top: 2022%;
+        bottom:0;
+        left:0;
+        width: 230%;
+        margin-left: 115%;
+    }
+}
